@@ -1,0 +1,482 @@
+@import '../utils/extend';
+@import '../utils/variables';
+.col-6{
+    width: 50%;
+}
+.col-4{
+    width: 30.33%;
+}
+.col-3{
+    width: 25%;
+}
+.cards{
+    margin-left: 15%;
+    width: 70%;
+    @extend .center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 10%;
+    button{
+@extend .button;
+    }
+    &__head{
+        font-size: 28px;
+        margin: 40px 750px 40px 0px;
+        h2{margin-top: 5%;}
+        span{
+            color: $main-color;
+            font-family: cursive;
+        }
+    }
+    &__card{
+        &__body{
+            margin: 10px;
+            &__explore{
+                margin-top: 15px;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                i{
+                    padding-left: 5px;
+                }
+            }
+            span{
+                font-size: 22px;
+            }
+            &__stats{
+                display: flex;
+                gap: 10%;
+                margin-top: 5%;
+                span{
+                    color: rgb(97, 97, 97);
+                }
+                i{
+                    color: $main-color;
+                    padding-right: 5px;
+                }
+            }
+        }
+        &__head{
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 35%;
+                transition: 0.3s;
+                &:hover{
+                transform: scale(1.1);
+                }
+            }
+            span{
+                position: absolute;
+                background-color: rgb(29, 103, 201);
+                border-radius: 15px;
+                padding: 8px;
+                color:white;
+                right: 5%;
+                top: 5%;
+            }
+        }
+    }
+}
+.kartlar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+// ----------COUNTRİES--------
+.countries{
+    height: 70vh;
+    background-color: rgb(254, 248, 236);
+    @extend .center;
+    flex-direction: column;
+    padding: 50px;
+    &__head{
+        text-align: center;
+        span{
+            color: $main-color;
+            font-family: cursive;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        h2{
+            font-size: 48px;
+            margin-top: 5%;
+        }
+    }
+    &__body{
+        margin: 40px;
+        @extend .center;
+        width: 80%;
+        gap: 30px;
+        &__maps{
+            @extend .center;
+            width: 120%;
+            &__map{
+                width: 120%;
+
+                &__body{
+                    @extend .center;
+                    flex-direction: column;
+                    padding: 20px;
+                    line-height: 40px;
+                    h5{
+                        font-size: 24px;
+                        text-align: center;
+                    }
+                    span{
+                        font-size: 22px;
+                        color: $main-color;
+                    }
+                }
+            }
+            &__map__head{
+                background-color: white;
+                padding: 20px 10px ;
+                @extend .center;
+                width: 80%;
+                height: 100%;
+                img{
+                    transition: 0.3s;
+                    width: 70%;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+// =========WHY CHOOSE US
+.full{
+    padding: 50px 0px 100px 0px;
+    @extend .center;
+    flex-direction: column;
+    background-color: rgb(254, 248, 236);
+    &__head{
+        @extend .center;
+        padding: 60px;
+        flex-direction: column;
+        h2{
+            font-size: 48px;
+            margin-top: 30px;
+        }
+        span{
+            font-family: cursive;
+            color: $main-color;
+            font-size: 24px;
+        }
+    }
+    &__body{
+        @extend .center;
+        width: 100%;
+        gap: 30px;
+        &__cards{
+            line-height: 200%;
+            span{
+                text-align: center;
+                font-size: 18px;
+                color:#5b5b5b;
+                margin-top: 20px;
+            }
+            h4{
+                font-size: 24px
+            }
+            @extend .center;
+            flex-direction: column;
+            width: 30%;
+            img{
+                width: 20%;
+                transition: transform 0.3s ease;
+                &:hover{
+                    transform: translateY(-10px)
+                }
+            }
+        }
+    }
+}
+
+// -------------VIDEO-----------
+.video{
+    background-image: url(https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/video-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend .center;
+    flex-direction:  column;
+    padding: 50px 0px;
+    height: 70vh;
+    h2{
+        font-size: 56px;
+        color: white;
+    }
+    p{
+        font-size: 24px;
+        color: white;
+        width: 40%;
+        text-align: center;
+        margin-top: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    a{@extend .center;
+        margin-top: 3%;
+        img{
+            width: 25%;
+        }
+    }
+}
+// -------------------SPONSORS-----------
+.sponsors{
+    @extend .center;
+    gap: 5%;
+    height: 50vh;
+    width: 80%;
+    margin-left: 9%;
+    &__img{
+        width: 20%;
+        background-color: rgb(236, 236, 236);
+        padding:20px 10px;
+        @extend .center;
+        img{
+            width: 53%;
+        }
+    }
+    #nasa{
+        img{
+            width: 35%;
+        }
+    }
+    #emirates{
+        img{
+            width: 40%;
+        }
+    }
+    #etihad{
+        img{
+            width: 59%;
+        }
+    }
+}
+
+
+// ===============EXPLORE OUR TOURS
+.tour{
+    @extend .center;
+    flex-direction: column;
+    margin: 80px;
+    span{
+        @extend .span;
+        font-size: 24px
+    }
+    h2{
+        font-size: 48px;
+        margin-top: 3%;
+    }
+    &__cards{
+        @extend .center;
+        gap: 5%;
+        width: 80%;
+        #img2{
+            background-image: url(https://arid-html.vercel.app/main-file/dist/assets/images/packages/p4-2.webp);
+        }
+        &__card{
+            position: relative;
+            margin-top: 5%;
+            background-image: url(https://arid-html.vercel.app/main-file/dist/assets/images/packages/p4-1.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            padding: 40px;
+            background-position: top;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background-size: 110%;
+                background-position: center;
+                h5{
+                    color: $main-color;
+                }
+            }
+            
+            h5{
+                font-size: 28px; 
+                color: white;
+                position: absolute;
+                bottom: 12%;
+                transition: 0.3s;
+            }
+            span{
+                font-size: 18px;
+                color:white;
+                position: absolute;
+                bottom: 5%;
+            }
+            &__review{
+                display: flex;
+                align-items: center;
+                color:white !important;
+                bottom: 25% !important;
+
+                position: absolute;
+                #sp{
+                    margin-left: 100%;
+                    width: 100%;
+                }
+                span{
+                    padding-left: 10px;
+                    color: white;
+                    font-size: 16px;
+                }
+                i{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+// --------------------Comments
+.comments{
+    @extend .center;
+    margin-bottom: 50px;
+    &__comment{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 40px;
+        @extend .center;
+        width: 80%;
+        &__left{
+            margin-left: 10%;
+            h5{
+                font-size: 28px;
+                text-align: center;
+                margin-top: 6%;
+            }
+            p{
+                color: rgb(84, 84, 84);
+                text-align: center;
+                font-size: 18px;
+                margin-top: 5%;
+            }
+            img{
+                border-radius: 50%;
+                width: 100%;
+            }
+        }
+        &__right{
+            margin-left: 5%;
+            width: 75%;
+            p{
+                font-size: 24px;
+                line-height: 40px;
+                color: rgb(84, 84, 84);
+                font-style: italic;
+            }
+        }
+    }
+}
+// -------------BLOG AND NEWS
+.offer{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    @extend .center;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    &__head{
+        @extend .center;
+        flex-direction: column;
+
+        margin-bottom: 2%;
+        span{
+            @extend .span;
+            font-size: 24px;
+        }
+        h2{
+            @extend .h2;
+        }
+    }
+    &__body{
+        display: flex;
+        gap: 5%;
+        width: 80%;
+        &__card{
+            overflow: hidden;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                width: 100%;
+                transition: 0.4s;
+            }
+            &__icon{
+                padding: 30px;
+                color: $p-color;
+                i{
+                    margin-right: 2%;
+                }
+            }
+            &__bottom{
+                padding: 20px 30px;
+                &:hover{
+                    h5{
+                        color: $main-color;
+                    }
+                }
+                h5{
+                    font-size: 28px;
+                    transition: 0.4s;
+                }
+                p{
+                    color: $p-color;
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-top: 5%;
+                }
+                button{
+                    border: none;
+                    background-color: transparent;
+                    font-size: 16px;
+                    color: $main-color;
+                    margin-top: 5%;
+                    transition: 0.4s;
+                    &:hover{
+                        color: rgb(180, 64, 35);
+                    }
+                }
+            }
+        }
+    }
+}
+// --------instagram-------
+.instagrams{
+    margin: 100px 0px;
+    display: flex;
+    width: 95%;
+    gap: 5%;
+    margin-left: 2%;
+    &__photo{
+        position: relative;
+        &:hover{
+            i{
+                opacity: 1;
+                bottom: 40%;
+            }
+        }
+    img{
+        width: 100%;
+    }
+    i{position: absolute;
+        z-index: 3;
+        left: 40%;
+        bottom: 20%;
+        background-color: white;
+        font-size: 24px;
+        border-radius: 50%;
+        color: black;
+        padding: 15px;
+        outline: 10px solid rgba(255, 255, 255, 0.541) ;
+        opacity: 0;
+        transition: bottom 0.5s ease, opacity 0.5s ease;
+    }
+    }
+}

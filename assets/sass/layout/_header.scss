@@ -1,0 +1,61 @@
+
+
+
+@import '../utils/extend';
+@import '../utils/variables';
+header {
+    background-image: url(https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp);
+    background-repeat: no-repeat;background-size: cover;
+}
+.hdr{
+    @extend .center;
+    flex-direction: column;
+    &__buttons{
+        @extend .center;
+        padding: 60px;
+        gap: 10%;
+        font-size: 24px;
+        color: $main-color;
+        margin-right: 5%;
+        #adam{
+            width: 30%;
+        }
+        &__buton{
+            border: 2px solid $main-color;
+            display: flex;
+            padding: 5% 20%;
+            gap: 8%;
+            width: 150%
+        }
+        &__btn{
+            background-color: $main-color;
+            padding: 6% 10%;
+            gap: 8%;
+            color: white;
+            transition: 0.3s;
+        }
+        &__btn:hover{
+            background-color: #ff5c33;
+            color: rgb(255, 255, 255)
+        }
+    }
+    &__head{
+        @extend .center;
+        flex-direction: column;
+        color: white;
+        margin-top: 5%;
+        p{
+            text-align: center;
+            font-size: 28px;
+            width: 60%;
+            line-height: 40px;
+        }
+        h1{
+            font-size: 72px;
+            text-shadow: 5px 5px 60px white,
+    -5px 5px 60px white,
+    -5px -5px 60px white,
+    5px -5px 60px white;
+            
+        }
+}}

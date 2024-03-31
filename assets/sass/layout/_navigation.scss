@@ -1,0 +1,49 @@
+
+@import '../utils/extend';
+@import '../utils/variables';
+
+.navf{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 90px;
+    @extend .flex;
+    padding: 30px;
+    img{
+        margin-right: 10%;
+    }
+    
+    &__button{
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+        border: none;
+        background-color: $main-color;
+        padding: 20px 20px;
+        span{
+            margin-right: 5px;
+        }
+    }
+    
+    &__pages{
+        width: 30%;
+        display: flex;
+        gap: 10%;
+        a{
+            color: white;
+            font-size: 22px;
+            text-decoration: none;
+        }
+    }
+    &__login{
+        width: 5%;
+        font-size: 22px;
+        display: flex;
+        justify-content: space-around;
+        gap: 10%;
+        color: white;
+        @extend .flex;
+        .fa-user{
+            padding: 20px;
+            background-color: $main-color;
+            border-radius: 50%;
+        }
+    }
+}

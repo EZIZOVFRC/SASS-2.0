@@ -1,0 +1,169 @@
+@import '../utils/extend';
+@import '../utils/variables';
+footer{
+    background-image: url(https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/footer-bg-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    padding: 50px 140px;
+}
+.sosial{
+    display: flex;
+    justify-content: space-between;
+    &__icons{
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        span{
+            color: white;
+            margin-left: 10px;
+        }
+        i{
+            margin-left: 35px;
+            background-color: white;
+            font-size: 18px;
+            border-radius: 50%;
+            color: black;
+            padding: 10px;
+            outline: 5px solid rgba(255, 255, 255, 0.541) ;
+            transition: 0.4s;
+            &:hover{
+                background-color: $main-color;
+                outline: 10px solid rgba(133, 87, 0, 0.367) ;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.cent{
+    display: flex;
+    margin-top:5%;
+    &__mail{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-size: 28px;
+            color: white;
+            margin-bottom: 3%;
+        }
+        &__input{
+            background-color: rgba(0, 0, 0, 0.379);
+            width: 80%;
+            border:2px solid gray;
+            padding: 10px;
+            i{
+                font-size: 18px;
+                color: gray;
+                padding: 5px;
+            }
+            input{
+                border: none;
+                background-color: transparent;
+                &::placeholder{
+                    font-size: 18px;
+                    background-color: transparent;
+                    color: gray;
+                }
+            }
+        }
+        &__btn1{
+            width: 85.4%;
+            padding: 10px 0px;
+            background-color: #e14b34;
+            color: white;
+            border: none;
+            font-size: 18px;
+            margin-top: 4%;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover{
+                background-color: $main-color;
+            }
+        }
+        &__btn2{
+            color: white;
+            background-color: #219fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            width: 35%;
+            padding: 13px 0px;
+            margin-top: 7%;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover{
+                background-color: #006ec2;
+            }
+        }
+    }
+    .lists{
+        width: 65%;
+        display: flex;
+        justify-content: space-;
+        margin-left: 5%;
+        ul{
+            width: 33%;
+            list-style: none;
+            h3{
+                font-size: 28px;
+                color: white;
+                margin-bottom: 15%;
+            }
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    line-height: 50px;
+                    font-size: 18px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    transition: 0.3s;
+                    i{
+                        color: $main-color;
+                        padding: 10px;
+                    }
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+#scroll{
+    font-size: 24px;
+    background-color: $main-color;
+    border-radius: 50%;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 45%;
+    position: relative;
+    &::after,&::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 600px;
+        height: 2px;
+        background-color: #fff;
+        z-index: 0;
+    }
+    &::before{
+        left: 65px;
+    }
+    &::after{
+        right: 65px;
+    }
+a{
+    color: white;
+}
+}
+html {
+    scroll-behavior: smooth;
+  }
+  .copyright{
+    margin-left: -4%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: -20px;
+  }
